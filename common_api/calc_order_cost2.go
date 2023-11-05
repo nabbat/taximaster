@@ -1,6 +1,6 @@
 package common_api
 
-import "github.com/ros-tel/taximaster/validator"
+import "github.com/nabbat/taximaster/validator"
 
 type (
 	CalcOrderCost2Request struct {
