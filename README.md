@@ -1,7 +1,7 @@
 ## Установка
 
 ```sh
-$ go get -u github.com/ros-tel/taximaster
+$ go get -u github.com/nabbat/taximaster
 ```
 
 ## Использование в вашем коде
@@ -9,7 +9,7 @@ $ go get -u github.com/ros-tel/taximaster
 1. TM API
 
 ```go
-import "github.com/ros-tel/taximaster/common_api"
+import "github.com/nabbat/taximaster/common_api"
 ```
 
 ## Примеры
@@ -22,7 +22,7 @@ package main
 import (
 	"log"
 
-	tm "github.com/ros-tel/taximaster/common_api"
+	tm "github.com/nabbat/taximaster/common_api"
 )
 
 func main() {
@@ -50,8 +50,8 @@ package main
 import (
 	"log"
 
-	tm "github.com/ros-tel/taximaster/common_api"
-	pay "github.com/ros-tel/taximaster/pay_term_api"
+	tm "github.com/nabbat/taximaster/common_api"
+	pay "github.com/nabbat/taximaster/pay_term_api"
 )
 
 func main() {
@@ -97,7 +97,7 @@ package main
 import (
 	"log"
 
-	tmt "github.com/ros-tel/taximaster/tm_tapi"
+	tmt "github.com/nabbat/taximaster/tm_tapi"
 )
 
 func main() {
