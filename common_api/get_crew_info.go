@@ -4,7 +4,7 @@ import (
 	"net/url"
 	"strconv"
 
-	"github.com/ros-tel/taximaster/validator"
+	"github.com/nabbat/taximaster/validator"
 )
 
 type (
