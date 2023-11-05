@@ -3,7 +3,7 @@ package tm_tapi
 import (
 	"net/url"
 
-	"github.com/ros-tel/taximaster/validator"
+	"github.com/nabbat/taximaster/validator"
 )
 
 type (
