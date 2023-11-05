@@ -3,7 +3,7 @@ package common_api
 import (
 	"net/url"
 
-	"github.com/ros-tel/taximaster/validator"
+	"github.com/nabbat/taximaster/validator"
 )
 
 type (
