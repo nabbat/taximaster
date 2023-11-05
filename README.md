@@ -1,7 +1,7 @@
 ## Установка
 
 ```sh
-$ go get -u github.com/nabbat/taximaster
+go get -u github.com/nabbat/taximaster
 ```
 
 ## Использование в вашем коде
