@@ -1,4 +1,4 @@
-package common_api
+	package common_api
 
 import (
 	"net/url"
@@ -39,6 +39,8 @@ type (
 		IsDismissed bool `json:"is_dismissed"`
 		// Фото водителя (только если need_photo = true)
 		DriverPhoto string `json:"driver_photo"`
+		// ИНН могут написать всё что угодно и может начинаться с 0 поэтому строка
+		Inn string `json:"inn"`		
 		// Массив параметров водителя
 		OrderParams []int `json:"order_params"`
 		// Массив телефонов водителя
