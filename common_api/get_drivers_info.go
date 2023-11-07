@@ -38,7 +38,7 @@ func (cl *Client) GetDriversInfo(req GetDriversInfoRequest) (GetDriversInfoRespo
 	if req.DismissedDrivers {
 		v.Add("dismissed_drivers", "true")
 	}
-	if req.Fields !="" {
+	if req.Fields != "" {
 		v.Add("fields", req.Fields)
 	}
 
