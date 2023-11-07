@@ -12,6 +12,8 @@ type (
 		LockedDrivers bool `validate:"omitempty"`
 		// Включить в ответ запроса уволенных водителей
 		DismissedDrivers bool `validate:"omitempty"`
+		// Фильтры по полям (например id,inn,license)
+		Fields string `validate:"omitempty"`
 	}
 
 	GetDriversInfoResponse struct {
@@ -36,6 +38,8 @@ func (cl *Client) GetDriversInfo(req GetDriversInfoRequest) (GetDriversInfoRespo
 	if req.DismissedDrivers {
 		v.Add("dismissed_drivers", "true")
 	}
+	if req.Fields !="" {
+		v.Add("fields", req.Fields)
 
 	err = cl.Get("get_drivers_info", errorMap{}, v, &response)
 
