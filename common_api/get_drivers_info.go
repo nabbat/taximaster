@@ -40,6 +40,7 @@ func (cl *Client) GetDriversInfo(req GetDriversInfoRequest) (GetDriversInfoRespo
 	}
 	if req.Fields !="" {
 		v.Add("fields", req.Fields)
+	}
 
 	err = cl.Get("get_drivers_info", errorMap{}, v, &response)
 
